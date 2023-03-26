@@ -20,7 +20,7 @@ public class StudentController {
 	public StudentController(@Qualifier("studentServiceImplMap") StudentService studentService) {
 		super();
 		this.studentService = studentService;
-		studentService.add(new Student("emp101",101, "AnilKumar", "Kolla", 507165, "Wyra", new Date()));
+		studentService.add(new Student("idStudent",101, "Bharath kumar", "pogula", "Wyra", new Date()));
 	}
 
 	@GetMapping("/student/{id}")
